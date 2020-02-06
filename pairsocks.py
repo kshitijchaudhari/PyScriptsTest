@@ -9,16 +9,16 @@ def getsocks():
     socks.sort()
     print(socks)
     m = 0
-    for s in socks:
-        if m + 1 < len(socks):
-            if s == socks[m + 1]:
-                pairCount[s] = int(pairCount.get(s, "0")) + 1
-                socks.pop(m)
-                if m < len(socks):
-                    socks.pop(m)
-            else:
-                continue
-        m=m+1
+    while(1):
+        try:
+            i = socks.index(socks[m],m+1)
+            pairCount[socks[m]] = pairCount.get(socks[m],0) + 1
+            socks.pop(i)
+            socks.pop(m)
+
+        except ValueError:
+            pass
+
     extraSocks = socks
     print("Extra socks are ", extraSocks)
     print("Pairs are ", pairCount)
