@@ -1,6 +1,3 @@
-import calendars
-
-
 def main():
     file = open("sample.txt", "r+")
     content = file.read()
