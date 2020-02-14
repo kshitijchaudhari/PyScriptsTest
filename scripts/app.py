@@ -45,7 +45,7 @@ l1.pack(side="right")
 l2 = tk.Label(root, text="Score: ", justify=tk.LEFT, padx=10)
 l2.pack(side="right")
 
-a = tk.PhotoImage(file="assets/apple.gif")
+a = tk.PhotoImage(file="../assets/apple.gif")
 seed()
 canvas.create_image(100, 100, image=a, anchor=tk.NW)
 
