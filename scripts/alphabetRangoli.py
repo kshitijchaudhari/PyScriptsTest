@@ -6,7 +6,6 @@ def getpattern(size):
     a = [chr(x) for x in range(97, (97 + size))]
     pattern = "-".join(a)
     midline = pattern[::-1] + pattern[1::]
-    linelength = len(midline)
     arr.append(midline)
     expandmidline(pattern, size)
     for i, j in enumerate(arr):
@@ -27,4 +26,4 @@ def expandmidline(pat, size):
 
 
 
-getpattern(11)
+getpattern(10)
