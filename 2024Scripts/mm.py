@@ -1,8 +1,8 @@
-import pyautogui
 import threading
 import time
 import random
 import keyboard
+import pyautogui
 
 sec = 60.0                  #the float of seconds to wait for the mouse to move.
 event = threading.Event()
