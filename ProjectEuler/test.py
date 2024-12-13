@@ -14,4 +14,11 @@ def testcode():
         i +=1     
     
 
-testcode()
+def testcode2():
+    m = "testcoden"
+    n = 3463644
+    print(f'Last character of string is {m[-1]}')
+    print(f'Last character of number is {str(n)[-1]}')
+
+
+testcode2()

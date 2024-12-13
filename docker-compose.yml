@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  pythonrunner:
+    image: pythonrunner
+    build:
+      context: .
+      dockerfile: ./Dockerfile
